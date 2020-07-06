@@ -1,51 +1,51 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
 
-body{
-    height: 100vh;
-    display: flex;
+body {
+	height: 100vh;
+	display: flex;
 }
 
-#cardboard{
-    width: 640px;
-    height: 640px;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
+#cardboard {
+	width: 640px;
+	height: 640px;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
 }
 
-.memorycard{
-    width: calc(25% - 10px);
-    height: 33%;
-    margin: 5px;
-    position: relative;
-    border-style: outset;
-    border-color: #FFA500;
-    transform-style: preserve-3d;
-    transition-duration: 0.3s;
+.memorycard {
+	width: calc(25% - 10px);
+	height: 33%;
+	margin: 5px;
+	position: relative;
+	border-style: outset;
+	border-color: #ffa500;
+	transform-style: preserve-3d;
+	transition-duration: 0.3s;
 }
 
 /* função de animação no jogo*/
-.memorycard:active{
-    transform: scale(0.95); /* AO CLICAR EM CIMA*/
+.memorycard:active {
+	transform: scale(0.95); /* AO CLICAR EM CIMA*/
 }
-.memorycard.flip{
-    transform: rotateY(180deg); /* A CLASSE COM ESSA NOMEAÇÃO RESULTA NO EFEITO ROTATE*/
+.memorycard.flip {
+	transform: rotateY(180deg); /* A CLASSE COM ESSA NOMEAÇÃO RESULTA NO EFEITO ROTATE*/
 }
 
 /*--------------------------------*/
-.frontface,.backface{
-    background-color: #F0E68C ;
-    width: 100%;
-    height:100%;
-    padding: 5px;
-    position: absolute;
+.frontface,
+.backface {
+	background-color: #f0e68c;
+	width: 100%;
+	height: 100%;
+	padding: 5px;
+	position: absolute;
 }
 
-.frontface{
-    transform: rotateY(180deg);
+.frontface {
+	transform: rotateY(180deg);
 }
-
